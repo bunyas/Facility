@@ -1,0 +1,167 @@
+﻿@model IEnumerable<SyncfusionASPNETCoreApplication2.Models.AFacilities>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ImplimentingPartnerCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Facility)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SapCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SupportedByMaul)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsAccredited)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RegionCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RfsoUserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Longtitude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Latititude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NearestPublicHfDistance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dsdm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActiveArt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cdcregion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientTypeCodeNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ComprehensiveImplimentingPartnerCodeNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeliveryZoneCodeNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DistrrictCodeNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FacilityType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LevelOfCareNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ownership)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientLoadCodeNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Village)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImplimentingPartnerCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Facility)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SapCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SupportedByMaul)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAccredited)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegionCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RfsoUserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Longtitude)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Latititude)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsActive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NearestPublicHfDistance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dsdm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActiveArt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cdcregion.CdcregionId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientTypeCodeNavigation.ClientTypeCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ComprehensiveImplimentingPartnerCodeNavigation.ImplimentingPartnerCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeliveryZoneCodeNavigation.ZoneCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DistrrictCodeNavigation.DistrictCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FacilityType.FacilityTypeId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LevelOfCareNavigation.LevelOfCareCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ownership.OwnershipId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientLoadCodeNavigation.PatientLoadCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Village.VillageId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FacilityCode">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FacilityCode">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FacilityCode">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

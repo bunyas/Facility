@@ -1,0 +1,29 @@
+﻿@using Syncfusion.JavaScript;
+@using Syncfusion.JavaScript.Models
+@{
+    ViewBag.Title = "Grid";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id = "ControlRegion">
+<ej-grid id="FlatGrid" 
+              allow-sorting="true"
+              selectiontype="Multiple"
+              allow-grouping="true" group-settings="@(new GroupSettings() { GroupedColumns = new List<string>() { "CustomerID" } })"
+              allow-filtering="true" filter-settings="@(new FilterSettings() { FilterType=FilterType.Excel}) "
+              allow-row-drag-and-drop="true" row-drop-settings="@(new RowDropSettings() {DropTargetID="#FlatGrid"})"
+           allow-paging="true">
+              <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" edit-mode="@(EditMode.Dialog)"></e-edit-settings>
+        <e-datamanager url="/Grid/DataSource" update-url="/Grid/Update" insert-url="/Grid/Insert" remove-url="/Grid/Delete" adaptor="UrlAdaptor"></e-datamanager>   
+        <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() { "add", "edit", "delete","update","cancel" })>
+        </e-toolbar-settings>     
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" text-align="Right" width="75" is-primary-key="true"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" text-align="Left" width="75"></e-column>
+            <e-column field="Freight" header-text="Freight" format="{0:C2}" text-align=Right width="75"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" format="{0:MM/dd/yyyy}" text-align=Right width="80"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="110"></e-column>
+        </e-columns>
+    </ej-grid>
+</div>

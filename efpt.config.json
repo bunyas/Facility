@@ -1,0 +1,33 @@
+﻿{
+   "ContextClassName": "MEDICALACCESSContextw",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "DoNotCombineNamespace": false,
+   "IdReplace": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": null,
+   "ProjectRootNamespace": "SyncfusionASPNETCoreApplication2",
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[__EFMigrationsHistory]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[__MigrationHistory]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[A_ART_Product_Classification]"
+      }
+   ],
+   "UseDatabaseNames": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false
+}

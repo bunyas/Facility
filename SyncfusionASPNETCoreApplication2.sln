@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28822.285
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SyncfusionASPNETCoreApplication2", "SyncfusionASPNETCoreApplication2.csproj", "{FF3D999B-B0F3-4766-9373-48DD90541455}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "..\WebApplication1\WebApplication1.csproj", "{6E5F4314-C4E1-4E1B-9185-4AD18AEC8A6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF3D999B-B0F3-4766-9373-48DD90541455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3D999B-B0F3-4766-9373-48DD90541455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3D999B-B0F3-4766-9373-48DD90541455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3D999B-B0F3-4766-9373-48DD90541455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E5F4314-C4E1-4E1B-9185-4AD18AEC8A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E5F4314-C4E1-4E1B-9185-4AD18AEC8A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E5F4314-C4E1-4E1B-9185-4AD18AEC8A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E5F4314-C4E1-4E1B-9185-4AD18AEC8A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1343E56-1E99-4C57-BAD9-0148A624E949}
+	EndGlobalSection
+EndGlobal
